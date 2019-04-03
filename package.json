@@ -1,0 +1,52 @@
+{
+  "name": "npm-package-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for javascript module, ready to package for npm.",
+  "author": "Mattias Naarttijärvi",
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Naartti/npm-package-boilerplate.git"
+  },
+  "main": "lib/npm-package-boilerplate.js",
+  "module": "lib/npm-package-boilerplate.js",
+  "files": [
+    "lib/npm-package-boilerplate.js"
+  ],
+  "scripts": {
+    "build": "webpack --mode=production",
+    "dev": "webpack-dev-server",
+    "test": "jest --config test/unit/jest.conf.js",
+    "lint": "eslint --ext .js src test/unit",
+    "watch": "jest --watch --config test/unit/jest.conf.js",
+    "prod": "npm run lint && npm run test && npm run build"
+  },
+  "keywords": [
+    "npm",
+    "package",
+    "boilerplate",
+    "node",
+    "javascript"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.5.0",
+    "babel-loader": "^8.0.5",
+    "eslint": "^4.15.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^24.5.0",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
