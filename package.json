@@ -1,5 +1,5 @@
 {
-  "name": "npm-package-boilerplate",
+  "name": "@naartti/npm-package-boilerplate",
   "version": "1.1.0",
   "description": "Boilerplate for javascript module, ready to package for npm.",
   "author": "Mattias Naarttijärvi",
