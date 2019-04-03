@@ -1,7 +1,7 @@
 # Features
 * Build with [webpack 4](https://webpack.js.org/) and [babel 7](https://babeljs.io/)
 * Test with [jest](https://jestjs.io)
-* Lint with [eslint](http://eslint.org/) ([standard config](https://github.com/standard/eslint-config-standard))
+* Lint with [eslint](http://eslint.org/) (Using ["Standard JS" config](https://github.com/standard/eslint-config-standard) as default)
 * Hot reloading with [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
 
 # Getting started
