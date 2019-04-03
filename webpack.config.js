@@ -1,6 +1,6 @@
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const libraryName = 'npm-package-boilerplate'
+const libraryName = 'npm-js-package-boilerplate'
 const outputFile = `${libraryName}.js`
 
 module.exports = {
