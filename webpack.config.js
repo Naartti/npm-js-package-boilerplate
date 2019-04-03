@@ -1,7 +1,7 @@
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const libraryName = 'log-scope'
-let outputFile = `${libraryName}.js`
+const libraryName = 'npm-package-boilerplate'
+const outputFile = `${libraryName}.js`
 
 module.exports = {
   entry: {
@@ -15,9 +15,13 @@ module.exports = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
+  resolve: {
+    alias: require('./aliases.config.js').webpack
+  },
   devServer: {
-    contentBase: './lib',
-    // index: outputFile,
+    contentBase: path.join(__dirname, 'lib'),
+    open: 'Google Chrome',
+    openPage: `${libraryName}`,
     hot: true
   },
   optimization: {
@@ -35,5 +39,5 @@ module.exports = {
             loader: 'babel-loader'
         }]
     }]
-},
+  }
 };

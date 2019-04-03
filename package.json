@@ -17,9 +17,9 @@
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "webpack-dev-server",
-    "test": "jest --config test/unit/jest.conf.js",
+    "test": "jest --config test/jest.conf.js",
     "lint": "eslint --ext .js src test/unit",
-    "watch": "jest --watch --config test/unit/jest.conf.js",
+    "watch": "jest --watch --config test/jest.conf.js",
     "prod": "npm run lint && npm run test && npm run build"
   },
   "keywords": [

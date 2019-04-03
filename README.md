@@ -5,14 +5,14 @@
 * Hot reloading with [webpack-dev-server](https://webpack.js.org/configuration/dev-server/)
 
 # Getting started
-1. [Clone this repo from github](https://github.com/eunikitin/modern-package-boilerplate)
+1. [Clone this repo from github](https://github.com/Naartti/npm-package-boilerplate)
 1. Inside the repo directory run `npm install && rm -r .git && git init`
 1. Update package.json with your information
 
 # Usage
 ## Development
 - ```npm run dev```
-- Browse to localhost:8080/your-module-name
+- This opens [localhost:8080/your-module-name](localhost:8080/your-module-name) in Chrome automatically (Can be removed from webpack.config.js)
 - Edit your code and enjoy hot reloading
 
 ## Test driven development

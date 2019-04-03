@@ -1,13 +1,8 @@
-import './util/polyfill.js'
-import logScope, { init } from './logScope.js'
+import 'src/util/polyfill.js'
+import myModule from 'src/myModule.js'
 
-// const log = logScope('scopeName')
-// log.success('We have a new scope!')
-
-// window.init = init
-// window.log = log
+// Do dev-testing to your module here, just remeber to remove/comment it when builing for production
+// window.myModule = myModule
 
 // Library export
-export { logScope, init }
-
-export default logScope
+export default myModule
