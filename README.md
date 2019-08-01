@@ -6,7 +6,8 @@
 
 # Getting started
 1. [Clone this repo from github](https://github.com/Naartti/npm-package-boilerplate)
-1. Inside the repo directory run `npm install && rm -r .git && git init`
+1. Create a new repo on GitHub
+1. Inside the local new repo directory run `git remote set-url origin git@github.com:yourname/NewProject.git`
 1. Rename to your package name in package.json
 1. Rename to your package name in webpack.config.js
 
