@@ -13,6 +13,7 @@ module.exports = {
     path: path.resolve(__dirname, 'lib'),
     library: libraryName,
     libraryTarget: 'umd',
+    globalObject: 'this',
     umdNamedDefine: true
   },
   resolve: {
