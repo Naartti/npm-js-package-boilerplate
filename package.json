@@ -20,7 +20,9 @@
     "test": "jest --config test/jest.conf.js",
     "lint": "eslint --ext .js src test/unit",
     "watch": "jest --watch --config test/jest.conf.js",
-    "prod": "npm run lint && npm run test && npm run build"
+    "prod": "npm run lint && npm run test && npm run build",
+    "npm:patch": "npm run prod && npm version patch && npm publish",
+    "npm:minor": "npm run prod && npm version minor && npm publish"
   },
   "keywords": [
     "npm",
