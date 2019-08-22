@@ -9,7 +9,6 @@
 1. Create a new repo on GitHub
 1. Inside the local new repo directory run `git remote set-url origin git@github.com:yourname/NewProject.git`
 1. Rename to your package name in package.json
-1. Rename to your package name in webpack.config.js
 
 
 # Usage

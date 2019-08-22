@@ -1,6 +1,6 @@
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const libraryName = 'npm-js-package-boilerplate'
+const libraryName = require('./package.json').name
 const outputFile = `${libraryName}.js`
 
 module.exports = {
@@ -21,7 +21,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'lib'),
     open: 'Google Chrome',
-    openPage: `${libraryName}`,
+    openPage: libraryName,
     hot: true
   },
   optimization: {
